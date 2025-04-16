@@ -34,22 +34,16 @@
                     <img src="assets/images/logo.png" alt="logo" />
                     </a>
                     <!-- Main Menu -->
-                    <div class="flex justify-end items-center gap-x-8">
+                    <div id="mainMenu" class="hidden flex-col justify-center items-center text-center gap-6 bg-[#000B22] py-8 absolute left-0 right-0 mx-auto top-24 lg:!flex lg:py-0 lg:bg-transparent lg:[position:inherit] lg:flex-row lg:justify-end lg:m-1">
                         <!-- Nav Links -->
-                        <nav class="hidden lg:flex space-x-6">
-                            <a href="#" class="p-2 text-base text-white/80 hover:text-white"
-                                >NFT</a
-                                >
-                            <a href="#" class="p-2 text-base text-white/80 hover:text-white"
-                                >Features</a
-                                >
-                            <a href="#" class="p-2 text-base text-white/80 hover:text-white"
-                                >Growth</a
-                                >
+                        <nav class="flex flex-col lg:flex-row gap-y-2 lg:gap-x-6">
+                            <a href="#" class="p-2 text-base text-white/80 hover:text-white">NFT</a>
+                            <a href="#" class="p-2 text-base text-white/80 hover:text-white">Features</a>
+                            <a href="#" class="p-2 text-base text-white/80 hover:text-white">Growth</a>
                         </nav>
                         <!-- Buttons -->
-                        <div class="flex space-x-4 justify-end">
-                            <a href="#" class="btn_1 hidden lg:flex">
+                        <div class="flex flex-col gap-4 items-center pt-7 lg:pt-0 lg:flex-row lg:justify-end">
+                            <a href="#" class="btn_1">
                             Connect Wallet
                             <img src="assets/images/hero/wallet.png" alt="Wallet" />
                             </a>
@@ -59,6 +53,10 @@
                             </a>
                         </div>
                     </div>
+                    <!-- Menu Bar -->
+                     <button type="button" id="menuToggleBtn" class="text-xl bg-white rounded-xl h-10 w-10 text-black cursor-pointer lg:hidden">
+                        <i id="menuIcon" class="fa-solid fa-bars-staggered"></i>
+                     </button>
                 </div>
             </div>
         </header>
@@ -66,23 +64,23 @@
         <main>
             <!-- Hero Area -->
             <section
-                class="pt-48 min-h-[1200px] bg-[url('../images/hero/bg.png')] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden"
+                class="pt-32 h-[950px] bg-[url('../images/hero/bg.png')] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden md:min-h-[1200px] md:pt-48"
                 >
                 <div class="container mx-auto">
                     <div>
                         <div class="flex-col lg:flex">
                             <div class="max-w-3xl">
                                 <h1
-                                    class="pb-5 font-poppins font-bold text-4xl md:text-5xl lg:text-[64px] leading-[120%] tracking-[0%]"
+                                    class="pb-4 md:pb-5 font-poppins font-bold text-2xl sm:text-4xl md:text-5xl lg:text-[64px] leading-[120%] tracking-[0%]"
                                     >
                                     Step Into the Future <br />
                                     of Virtual Living
                                 </h1>
-                                <p class="pb-10 text-lg">
+                                <p class="pb-10 text-base md:text-lg">
                                     Discover a groundbreaking digital realm where innovation meets
-                                    <br />
+                                    <br class="hidden md:block" />
                                     imagination, offering limitless opportunities to live,
-                                    connect, and <br />
+                                    connect, and <br class="hidden md:block" />
                                     thrive virtually.
                                 </p>
                                 <a
@@ -102,10 +100,10 @@
                                     />
                                 </a>
                             </div>
-                            <div class="max-w-xl w-full">
+                            <div class="max-w-60 mx-auto w-full lg:max-w-xl m-1">
                                 <img
                                     src="assets/images/hero/man.png"
-                                    class="absolute -top-10 right-2/7 w-lg h-[1232px] -z-10"
+                                    class="w-full h-full lg:-top-10 lg:absolute lg:right-[200px] xl:right-[360px] 2xl:right-[520px] lg:w-lg lg:h-[1232px] -z-10"
                                     alt="visual-illustration"
                                     />
                             </div>
@@ -116,27 +114,27 @@
                 <div class="shape_hero">
                     <img
                         src="assets/images/hero/1.png"
-                        class="absolute top-35 left-25 w-35 h-25 -z-10 "
+                        class="absolute w-20 h-20 top-28 left-10 md:top-35 md:left-25 md:w-35 md:h-25 -z-10 "
                         alt="spape"
                         />
                     <img
                         src="assets/images/hero/phone.png"
-                        class="absolute top-1/3 left-25 w-32 h-56 -z-10"
+                        class="absolute bottom-2/5 left-3 h-20 w-28 lg:w-32 lg:h-28 2xl:w-32 2xl:h-56 -z-10 2xl:top-1/3 2xl:left-10"
                         alt="spape"
                         />
                     <img
                         src="assets/images/hero/3.png"
-                        class="absolute top-60 left-60 w-sm h-sm lg:h-md lg:w-md -z-10"
+                        class="absolute w-32 h-32 bottom-40 left-4 md:w-60 md:h-72 md:bottom-20 md:left-20 lg:bottom-10  lg:left-32 lg:w-[250px] lg:h-[600px] 2xl:bottom-[50px] 2xl:left-60 2xl:h-md 2xl:w-md -z-10"
                         alt="spape"
                         />
                     <img
                         src="assets/images/hero/2.png"
-                        class="absolute top-44 right-70 w-32 h-56 -z-10"
+                        class="absolute w-20 h-20 right-10 top-24 sm:top-44 sm:right-70 sm:w-32 sm:h-56 -z-10"
                         alt="spape"
                         />
                     <img
                         src="assets/images/hero/4.png"
-                        class="absolute bottom-96 lg:bottom-72 right-35 w-40 h-40 lg:w-80 lg:h-80 -z-10"
+                        class="absolute w-20 h-24 right-4 md:h-32 md:w-36 bottom-96 md:right-35 2xl:bottom-72 lg:w-36 lg:h-44 2xl:w-80 2xl:h-80 -z-10"
                         alt="spape"
                         />
                 </div>
@@ -144,21 +142,21 @@
             <!-- End Hero Area -->
             <!-- Features Area -->
             <section
-                class="py-32 relative overflow-hidden bg-[url('../images/nft/bg.png')] bg-no-repeat bg-cover bg-top"
+                class="py-20 lg:py-32 relative overflow-hidden bg-[url('../images/nft/bg.png')] bg-no-repeat bg-cover bg-top"
                 >
                 <div class="container mx-auto relative z-10">
                     <!-- Head -->
                     <div class="text-center max-w-3xl mx-auto pb-10">
-                        <h2 class="pb-5 text-5xl font-bold">NFT Land Utilization</h2>
-                        <p>
+                        <h2 class="pb-5 text-3xl lg:text-5xl font-bold">NFT Land Utilization</h2>
+                        <p class="text-base">
                             Own and customize NFT lands, lease properties, and earn income
-                            through virtual <br />
+                            through virtual <br class="hidden lg:block" />
                             farming, trading, or hosting immersive events.
                         </p>
                     </div>
                     <!-- Content -->
                     <div
-                        class="flex items-center justify-between flex-col-reverse md:flex-row gap-10"
+                        class="flex items-center justify-between flex-col-reverse lg:flex-row gap-10"
                         >
                         <!-- Text -->
                         <div class="flex-1/2">
@@ -167,10 +165,10 @@
                                 >
                                 Ownership and Customization
                             </h4>
-                            <h2 class="pb-4 pt-6 text-4xl font-bold">
+                            <h2 class="pb-4 pt-6 text-2xl md:text-3xl lg:text-4xl font-bold">
                                 Build Your Virtual World
                             </h2>
-                            <p class="pb-10">
+                            <p class="pb-10 text-base">
                                 Create a personalized digital universe with customizable NFT
                                 lands, unique structures, and immersive experiences. Shape your
                                 metaverse journey with endless possibilities, from social hubs
@@ -203,26 +201,26 @@
 
 
             <!-- Start Functional Area -->
-            <section class="function_area py-32 relative overflow-hidden bg-[url('../images/feature/bg.png')] bg-no-repeat bg-cover bg-top">
+            <section class="function_area py-20 lg:py-32 relative overflow-hidden bg-[url('../images/feature/bg.png')] bg-no-repeat bg-cover bg-top">
                 <div class="container mx-auto relative z-10">
                   <!-- Head -->
-                    <div class="text-center mx-auto pb-10">
-                      <h2 class="pb-5 text-5xl font-bold">Key Features for a Functional City</h2>
-                      <p class="max-w-3xl m-auto">
+                    <div class="pb-10 text-center mx-auto">
+                      <h2 class="pb-5 text-2xl lg:text-5xl font-bold">Key Features for a Functional City</h2>
+                      <p class="max-w-3xl m-auto text-base">
                         Design buildings, explore VR shopping malls, engage in e-commerce, and connect socially in dynamic metaverse spaces.
                       </p>
                   </div>
                   <div class="feature_carousel owl-carousel owl-theme">
                     <!-- Slide Item -->
                     <div class="item">
-                      <div class="card_bg relative pt-15 pb-15 pl-5 pr-0 bg-[url('../images/feature/card_bg.png')] bg-no-repeat bg-cover bg-top"> 
+                      <div class="card_bg relative pt-15 pb-15 pl-10 pr-0 bg-[url('../images/feature/card_bg.png')] bg-no-repeat bg-cover bg-top"> 
                         <div class="flex items-center justify-between flex-col-reverse md:flex-row gap-10">
                           <!-- Text -->
                           <div class="flex-1/2">
                             <h4 class="inline ct_gradient relative z-10 bg-white/5 px-5 py-2 rounded-full">
                               Buildings and Infrastructure
                             </h4>
-                            <h2 class="pb-4 pt-6 text-4xl font-bold">
+                            <h2 class="pb-4 pt-6  text-2xl lg:text-4xl font-bold">
                               Design Your Perfect Space in the Androverse
                             </h2>
                             <p class="pb-10">
@@ -241,14 +239,14 @@
                     </div>
                     <!-- Slide Item -->
                     <div class="item">
-                      <div class="card_bg relative pt-15 pb-15 pl-5 pr-0 bg-[url('../images/feature/card_bg.png')] bg-no-repeat bg-cover bg-top"> 
+                      <div class="card_bg relative pt-15 pb-15 pl-10 pr-0 bg-[url('../images/feature/card_bg.png')] bg-no-repeat bg-cover bg-top"> 
                         <div class="flex items-center justify-between flex-col-reverse md:flex-row gap-10">
                           <!-- Text -->
                           <div class="flex-1/2">
                             <h4 class="inline ct_gradient relative z-10 bg-white/5 px-5 py-2 rounded-full">
                               Buildings and Infrastructure
                             </h4>
-                            <h2 class="pb-4 pt-6 text-4xl font-bold">
+                            <h2 class="pb-4 pt-6  text-2xl lg:text-4xl font-bold">
                               Design Your Perfect Space in the Androverse
                             </h2>
                             <p class="pb-10">
@@ -267,14 +265,14 @@
                     </div>
                     <!-- Slide Item -->
                     <div class="item">
-                      <div class="card_bg relative pt-15 pb-15 pl-5 pr-0 bg-[url('../images/feature/card_bg.png')] bg-no-repeat bg-cover bg-top"> 
+                      <div class="card_bg relative pt-15 pb-15 pl-10 pr-0 bg-[url('../images/feature/card_bg.png')] bg-no-repeat bg-cover bg-top"> 
                         <div class="flex items-center justify-between flex-col-reverse md:flex-row gap-10">
                           <!-- Text -->
                           <div class="flex-1/2">
                             <h4 class="inline ct_gradient relative z-10 bg-white/5 px-5 py-2 rounded-full">
                               Buildings and Infrastructure
                             </h4>
-                            <h2 class="pb-4 pt-6 text-4xl font-bold">
+                            <h2 class="pb-4 pt-6  text-2xl lg:text-4xl font-bold">
                               Design Your Perfect Space in the Androverse
                             </h2>
                             <p class="pb-10">
@@ -293,14 +291,14 @@
                     </div>
                     <!-- Slide Item -->
                     <div class="item">
-                      <div class="card_bg relative pt-15 pb-15 pl-5 pr-0 bg-[url('../images/feature/card_bg.png')] bg-no-repeat bg-cover bg-top"> 
+                      <div class="card_bg relative pt-15 pb-15 pl-10 pr-0 bg-[url('../images/feature/card_bg.png')] bg-no-repeat bg-cover bg-top"> 
                         <div class="flex items-center justify-between flex-col-reverse md:flex-row gap-10">
                           <!-- Text -->
                           <div class="flex-1/2">
                             <h4 class="inline ct_gradient relative z-10 bg-white/5 px-5 py-2 rounded-full">
                               Buildings and Infrastructure
                             </h4>
-                            <h2 class="pb-4 pt-6 text-4xl font-bold">
+                            <h2 class="pb-4 pt-6  text-2xl lg:text-4xl font-bold">
                               Design Your Perfect Space in the Androverse
                             </h2>
                             <p class="pb-10">
@@ -323,8 +321,8 @@
 
                 
                 <div class="feature_shape">
-                    <div class="absolute [top:377px] [left:-87px] feature_shape_1">
-                      <img src="assets/images/feature/shape_1.png" alt="" />
+                    <div class="absolute top-[200px] left-0 lg:top-[377px] lg:left-[-80px] feature_shape_1">
+                      <img class="h-20 w-20 lg:h-40 lg:w-40" src="assets/images/feature/shape_1.png" alt="" />
                     </div>
                   </div>
             </section>
